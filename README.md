@@ -1,4 +1,4 @@
-# RISC-V Processor Architecture Design (IPA Project - Spring 2025)
+# RISC-V Processor Architecture Design (IPA Project - Spring 2026)
 
 ## Overview
 
