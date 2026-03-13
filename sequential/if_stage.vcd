@@ -1,0 +1,256 @@
+$date
+	Sun Feb 22 18:52:10 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module if_stage_tb $end
+$var wire 64 ! pc_out [63:0] $end
+$var wire 32 " instr [31:0] $end
+$var reg 1 # Branch $end
+$var reg 1 $ Zero $end
+$var reg 1 % clk $end
+$var reg 64 & imm [63:0] $end
+$var reg 1 ' reset $end
+$scope module uut $end
+$var wire 1 # Branch $end
+$var wire 1 $ Zero $end
+$var wire 1 % clk $end
+$var wire 64 ( imm [63:0] $end
+$var wire 1 ' reset $end
+$var wire 64 ) pc_plus4 [63:0] $end
+$var wire 64 * pc_out [63:0] $end
+$var wire 64 + pc_next_wire [63:0] $end
+$var wire 32 , instr [31:0] $end
+$var wire 64 - branch_target [63:0] $end
+$scope module add4 $end
+$var wire 64 . pc_4 [63:0] $end
+$var wire 64 / pc [63:0] $end
+$upscope $end
+$scope module add_branch $end
+$var wire 64 0 imm [63:0] $end
+$var wire 64 1 pc_curr [63:0] $end
+$var wire 64 2 branch_target [63:0] $end
+$upscope $end
+$scope module imem $end
+$var wire 32 3 instr [31:0] $end
+$var wire 64 4 addr [63:0] $end
+$upscope $end
+$scope module mux $end
+$var wire 1 # Branch $end
+$var wire 1 $ Zero $end
+$var wire 64 5 branch_target [63:0] $end
+$var wire 64 6 pc_plus4 [63:0] $end
+$var reg 64 7 next_pc [63:0] $end
+$upscope $end
+$scope module program_counter $end
+$var wire 1 % clk $end
+$var wire 64 8 pc_in [63:0] $end
+$var wire 1 ' reset $end
+$var reg 64 9 pc_out [63:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 9
+b100 8
+b100 7
+b100 6
+b0 5
+b0 4
+b10100000000000100010011 3
+b0 2
+b0 1
+b0 0
+b0 /
+b100 .
+b0 -
+b10100000000000100010011 ,
+b100 +
+b0 *
+b100 )
+b0 (
+1'
+b0 &
+0%
+0$
+0#
+b10100000000000100010011 "
+b0 !
+$end
+#5000
+1%
+#10000
+0%
+#15000
+b1000 +
+b1000 7
+b1000 8
+b101000000000000110010011 "
+b101000000000000110010011 ,
+b101000000000000110010011 3
+b100 -
+b100 2
+b100 5
+b1000 )
+b1000 .
+b1000 6
+b100 !
+b100 *
+b100 /
+b100 1
+b100 4
+b100 9
+1%
+0'
+#20000
+0%
+#25000
+b1100 +
+b1100 7
+b1100 8
+b1100010000000010110011 "
+b1100010000000010110011 ,
+b1100010000000010110011 3
+b1000 -
+b1000 2
+b1000 5
+b1100 )
+b1100 .
+b1100 6
+b1000 !
+b1000 *
+b1000 /
+b1000 1
+b1000 4
+b1000 9
+1%
+#30000
+0%
+#35000
+b1000000001100010000000100110011 "
+b1000000001100010000000100110011 ,
+b1000000001100010000000100110011 3
+b10000 )
+b10000 .
+b10000 6
+b1100 !
+b1100 *
+b1100 /
+b1100 1
+b1100 4
+b1100 9
+b11100 +
+b11100 7
+b11100 8
+1$
+1#
+b11100 -
+b11100 2
+b11100 5
+b10000 &
+b10000 (
+b10000 0
+1%
+#40000
+0%
+#45000
+b101100 +
+b101100 7
+b101100 8
+b1100010110001110110011 "
+b1100010110001110110011 ,
+b1100010110001110110011 3
+b101100 -
+b101100 2
+b101100 5
+b100000 )
+b100000 .
+b100000 6
+b11100 !
+b11100 *
+b11100 /
+b11100 1
+b11100 4
+b11100 9
+1%
+#46000
+b100000 +
+b100000 7
+b100000 8
+0$
+#50000
+0%
+#55000
+b100100 +
+b100100 7
+b100100 8
+b100101011000000100011 "
+b100101011000000100011 ,
+b100101011000000100011 3
+b110000 -
+b110000 2
+b110000 5
+b100100 )
+b100100 .
+b100100 6
+b100000 !
+b100000 *
+b100000 /
+b100000 1
+b100000 4
+b100000 9
+1%
+#60000
+0%
+#65000
+b101000 +
+b101000 7
+b101000 8
+b101011010100000011 "
+b101011010100000011 ,
+b101011010100000011 3
+b110100 -
+b110100 2
+b110100 5
+b101000 )
+b101000 .
+b101000 6
+b100100 !
+b100100 *
+b100100 /
+b100100 1
+b100100 4
+b100100 9
+1%
+#70000
+0%
+#75000
+b101100 +
+b101100 7
+b101100 8
+b11000101011000110100011 "
+b11000101011000110100011 ,
+b11000101011000110100011 3
+b111000 -
+b111000 2
+b111000 5
+b101100 )
+b101100 .
+b101100 6
+b101000 !
+b101000 *
+b101000 /
+b101000 1
+b101000 4
+b101000 9
+1%
+#76000
